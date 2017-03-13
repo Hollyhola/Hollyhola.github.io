@@ -285,7 +285,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="2017/03/09/CSS垂直居中布局/">CSS垂直居中布局</a>
+      <a class="article-title" href="2017/03/09/CSS垂直居中布局/">CSS居中布局</a>
     </h1>
   
 
@@ -295,7 +295,23 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <h1 id="CSS居中布局"><a href="#CSS居中布局" class="headerlink" title="CSS居中布局"></a>CSS居中布局</h1><h2 id="水平方向的居中"><a href="#水平方向的居中" class="headerlink" title="水平方向的居中"></a>水平方向的居中</h2><h3 id="内联元素"><a href="#内联元素" class="headerlink" title="内联元素"></a>内联元素</h3><p>1.当内部元素的display属性是<strong style="color: black">inline,inline-block,inline-table,inline-flex</strong>或内部元素是<strong style="color:black">文字</strong>的时候，可以给外部的父级元素增加以下css样式<br><br><strong style="color: red">text-align:center</strong></p>
+<h3 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h3><p>1.给需要居中的块元素的<strong style="color: black">margin-left,margin-right均设置为auto</strong></p>
+<p>###多个元素</p>
+<p>#####1.内联元素示例<br>    给内部需要居中的元素设置display:inline-center<br>    给父级元素增加样式text-align:center</p>
+<p>#####2.弹性盒子示例<br>    给父级元素设置display:flex<br>    同时设置justify-content:center<br>    justify-content:定义在当前行上，弹性项目沿主轴如何排布</p>
+<p>#####3.多个元素竖直排列同时水平方向居中<br>    给每个元素使用margin: 0 auto</p>
+<h2 id="垂直方向的居中"><a href="#垂直方向的居中" class="headerlink" title="垂直方向的居中"></a>垂直方向的居中</h2><p>###内联元素</p>
+<p>#####1.单行元素<br>    1.1使用padding<br>    1.2使用line-height</p>
+<p>#####2.多行元素<br>    1.1 使用table<br>        父元素display:table<br>        子元素display:table-cell; vertical-align:middle;<br>        verticle-aligin对块元素不起作用<br>    1.2使用flex<br>        给父元素（即flex容器）<br>        display:flex;<br>        flex-direction:column;<br>        justify-content:center<br>        当父元素指定高度时可以使用该方法<br>    1.3父元素未指定高度，使用伪类</p>
+<p>###块级元素</p>
+<p>#####1.知道元素高度</p>
+<blockquote>
+<p>This is a blockquote.</p>
+<p>This is the second paragraph in the blockquote.</p>
+<h2 id="This-is-an-H2-in-a-blockquote"><a href="#This-is-an-H2-in-a-blockquote" class="headerlink" title="This is an H2 in a blockquote"></a>This is an H2 in a blockquote</h2></blockquote>
+<p>Some of these words <em>are emphasized</em>.<br>Some of these words <em>are emphasized also</em>.<br>Use two asterisks for <strong>strong emphasis</strong>.<br>Or, if you prefer, <strong>use two underscores instead</strong>.</p>
+
       
     </div>
     
